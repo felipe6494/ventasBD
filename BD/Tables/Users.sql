@@ -1,0 +1,15 @@
+CREATE TABLE [dbo].[Users](
+	[Id_User] [int] IDENTITY(1,1)  NOT NULL,
+	[Username] [varchar](250) NOT NULL,
+	[Password] [varchar](60) NOT NULL,
+	[FirstName] [varchar](60) NOT NULL,
+	[LastName] [varchar](250)
+	
+PRIMARY KEY CLUSTERED 
+(
+	[Id_User] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
